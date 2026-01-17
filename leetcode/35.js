@@ -8,4 +8,4 @@ var searchInsert = function (nums, target) {
 };
 
 
-console.log(searchInsert([1,3,5,6,8],9))
+console.log(searchInsert([1,3,5,6,8,8,10],9))
