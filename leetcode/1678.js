@@ -9,7 +9,7 @@ var interpret = function (command) {
     
    else if (c[i] == "(" && c[i+1]==")") {
      ans.push("o")
-    } else if (c[i] == "(" && c[i + 1] == "a" && c[i + 2] == "l" && c[i + 3] == ")") {
+    } else if (c[i] == "(" && c[i + 1] == "a" ) {
       ans.push("al");
     } 
   }
