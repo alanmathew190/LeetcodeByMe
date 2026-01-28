@@ -1,7 +1,10 @@
-
-
-console.log("5" + 1)
-
-for (i = 0; i < 10; i++){
-    console.log(i++)
+function once(fn) {
+    let used = false
+    if (!used) {
+        used = true
+       fn()
+    }
 }
+
+once(() => console.log("Hello"))
+once(() => console.log("Hello"));
