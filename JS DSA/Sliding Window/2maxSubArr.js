@@ -1,23 +1,35 @@
 arr = [2, 1, 5, 1, 3, 2];
 k=3
-let result = []
+// let result = []
+// let sum = 0
+// let max = 0
+
+// for (i = 0; i<k; i++){
+//     sum += arr[i]
+//     max=sum
+// }
+// for (i = k; i < arr.length; i++){
+//     sum = sum - arr[i - k] + arr[i]
+//     if (sum > max) {
+//         max=sum
+//     } else {
+//         continue
+//     }
+// }
+
+// console.log(max)
+
 let sum = 0
-let max = 0
-
-for (i = 0; i<k; i++){
-    sum += arr[i]
-    max=sum
-}
-for (i = k; i < arr.length; i++){
-    sum = sum - arr[i - k] + arr[i]
-    if (sum > max) {
-        max=sum
-    } else {
-        continue
+let maxSum = 0
+let left=0
+for (right = 0; right < arr.length; right++){
+    sum+=arr[right]
+    while (right - left + 1 > k) {
+        sum-=arr[left]
+        left++
     }
+    maxSum=Math.max(maxSum,sum)
 }
 
-console.log(max)
-
-
+console.log(maxSum)
 
