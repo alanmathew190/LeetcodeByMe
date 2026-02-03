@@ -22,3 +22,21 @@ var isPalindrome = function (s) {
     
 };
 console.log(isPalindrome("A man, a plan, a canal: Panama"))
+let nums = [1, 2, 3, 4]
+
+  let freq={}
+        for(let i=0;i<nums.length;i++){
+           let ch=nums[i]
+           if(freq[ch]===undefined){
+            freq[ch]=1
+           }else{
+            freq[ch]++
+           }
+           console.log(freq)
+            if(freq[ch]>1){
+                console.log(false) 
+                return
+        }
+        console.log(true)
+        }
+       
