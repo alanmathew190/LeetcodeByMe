@@ -9,6 +9,8 @@ for (i = 0; i < s.length; i++){
     }
         else {
             freq[ch]++
-        }
+    }
+    
 }
+freq.toSorted((a, b) => { a- b})
 console.log(freq)
