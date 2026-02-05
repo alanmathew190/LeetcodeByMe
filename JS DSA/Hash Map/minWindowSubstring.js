@@ -1,5 +1,4 @@
-s = "ADOBECODEBANC";
-t = "ABC";
+
 
 // let freqT = {}
 // let left = 0
@@ -30,7 +29,8 @@ t = "ABC";
 //     }
 
 // }console.log(s.slice(start,start+minlen))
-
+s = "ADOBECODEBANC";
+t = "ABC";
 let freqt = {};
 let minlen = Infinity;
 let start = 0;
