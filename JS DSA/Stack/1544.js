@@ -11,3 +11,4 @@ var makeGood = function (s) {
 return stack.join("")
 };
 console.log(makeGood("abBAcC"));
+1209
